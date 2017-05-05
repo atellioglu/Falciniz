@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/defaultBackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_back_button" android:id="@+id/header"></include>
+    <RelativeLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/old_paper"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/falciImage"
+            android:src="@drawable/falci"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_toRightOf="@+id/falciImage"
+            android:layout_marginTop="60dp"
+            android:id="@+id/falciTextView"
+            android:layout_marginRight="10dp"
+            android:text="Leyla abla diyor ki..."
+            android:lines="2"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:typeface="monospace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_below="@+id/falciImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/contextTextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

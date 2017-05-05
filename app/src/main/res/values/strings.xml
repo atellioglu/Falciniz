@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Falcınız</string>
+    <string-array name="womanNoRelation">
+
+
+    </string-array>
+    <string-array name="womanWithRelation">
+
+
+    </string-array>
+    <string-array name="userNames">
+        <item>Derya</item>
+        <item>Filiz</item>
+        <item>Leyla</item>
+        <item>Gül</item>
+        <item>Gizem</item>
+        <item>Feyza</item>
+        <item>Şengül</item>
+        <item>Ayşe</item>
+
+
+    </string-array>
+</resources>

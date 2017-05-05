@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/defaultBackgroundColor"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/header"></include>
+        <RelativeLayout
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/old_paper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:hint="İsminiz"
+                    android:id="@+id/editTextName"
+                    android:backgroundTint="@color/header_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/editTextAge"
+                    android:hint="Yaşınız"
+                    android:backgroundTint="@color/header_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/relationImageView"
+                        android:src="@drawable/hearth_fill_square"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_toRightOf="@+id/relationImageView"
+                        android:text="İlişkisi var"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="15sp"
+                        android:textSize="15sp"
+                        android:id="@+id/txtViewRelation"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/genderImageView"
+                        android:src="@drawable/female_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_toRightOf="@+id/genderImageView"
+                        android:text="Kadin"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="15sp"
+                        android:textSize="15sp"
+                        android:id="@+id/txtViewGender"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_toLeftOf="@+id/coffeImageView2"
+                android:id="@+id/coffeImageView1"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cup_coffee"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/coffeImageView2"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cup_coffee"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:layout_toRightOf="@+id/coffeImageView2"
+                android:id="@+id/coffeImageView3"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cup_coffee"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendMagic"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:text="Falımı gönder"
+        android:background="@drawable/send_button_effect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

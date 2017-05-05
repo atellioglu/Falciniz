@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "97696592428",
+    "firebase_url": "https://falciniz-7c832.firebaseio.com",
+    "project_id": "falciniz-7c832",
+    "storage_bucket": "falciniz-7c832.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97696592428:android:5ace70ac538eed7f",
+        "android_client_info": {
+          "package_name": "org.tll.falciniz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97696592428-rhap1o9o69l6hclfp31eumbp0nlkhr9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF1Us9Ib0AVr9iEYtuTJTD2HfUTcYq_14"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
