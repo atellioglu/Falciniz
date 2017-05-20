@@ -20,4 +20,12 @@
 
 
     </string-array>
+    <string-array name="randomText">
+         <item>Bak kimseye bakmam biliyorsun :)</item>
+         <item>Sana bir kısmet var :)</item>
+         <item>Hmm senin önün gayet açık gözüküyo :)</item>
+         <item>Bekledigin bir yerden haber alacaksın :)</item>
+         <item>Uç vakte kadar yolun var :)</item>
+
+    </string-array>
 </resources>

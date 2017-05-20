@@ -19,6 +19,7 @@ import com.google.firebase.iid.FirebaseInstanceId;
  * Created by abdullahtellioglu on 21/04/17.
  */
 public class MainActivity extends Activity {
+
     private TextView genderTextView,relationTextView;
     private EditText nameEditText,ageEditText;
     private ImageView genderImageView,relationImageView;
@@ -68,16 +69,28 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Actions.getInstance().register(getApplicationContext(), user);
-                try{
-                    Actions.getInstance().sendMagic(images,user,getApplicationContext());
-                }catch (Exception ex){
+                try {
+                    Actions.getInstance().sendMagic(images, user, getApplicationContext());
+                } catch (Exception ex) {
                     ex.printStackTrace();
                 }
+                Intent kk = new Intent();
+                kk.putExtra("name", "burhan2");
+                setResult(RESULT_OK, kk);
+
 
             }
         });
         setUserInfo(Actions.getInstance().getUser(getApplicationContext()));
     }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setResult(RESULT_CANCELED);
+    }
+
     private View.OnClickListener changeRelationViewClickListener(){
         return new View.OnClickListener(){
             @Override
@@ -109,6 +122,7 @@ public class MainActivity extends Activity {
             }
         };
     }
+
     @Override
     protected void onSaveInstanceState(Bundle out) {
         super.onSaveInstanceState(out);

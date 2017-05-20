@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/defaultBackgroundColor"
+    android:layout_height="match_parent">
+    <include layout="@layout/header"
+                android:id="@+id/home_header">
+    </include>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coffee_turkish"
+            android:id="@+id/activity_image_view"
+            android:layout_below="@+id/home_header"
+            android:layout_above="@+id/activity_first_btn_send_magic" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_first_btn_old_magic"
+            android:text="Eski Fallarim"
+            android:layout_below="@+id/home_header"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/activity_image_view"
+            android:id="@+id/activity_text"
+            android:layout_above="@+id/activity_first_btn_send_magic"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:typeface="monospace"
+            android:textStyle="italic"
+            android:textColor="@android:color/holo_green_dark"/>
+
+
+        <Button
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Falima Bak"
+            android:id="@+id/activity_first_btn_send_magic"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
